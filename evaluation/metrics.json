@@ -1,0 +1,10 @@
+{
+  "dataset_size": 35,
+  "metrics": {
+    "recall_at_k": "측정 전",
+    "faithfulness": "측정 전",
+    "latency_ms": "측정 전",
+    "token_cost": "측정 전"
+  },
+  "note": "실제 실행 환경에서 측정 후 값을 업데이트"
+}
