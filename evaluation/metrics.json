@@ -1,10 +1,17 @@
 {
   "dataset_size": 35,
-  "metrics": {
-    "recall_at_k": "측정 전",
-    "faithfulness": "측정 전",
-    "latency_ms": "측정 전",
-    "token_cost": "측정 전"
+  "measured_on": "2026-09-10",
+  "retrieval": {
+    "recall_at_1": 0.7429,
+    "recall_at_3": 1.0,
+    "definition": "각 질문에 대해 사전에 지정한 기대 문서가 top-k 검색 결과에 포함되는 비율"
   },
-  "note": "실제 실행 환경에서 측정 후 값을 업데이트"
+  "latency": {
+    "average_ms": 0.861,
+    "p95_ms": 0.928,
+    "definition": "로컬 TF-IDF 검색 35개 질의의 retrieval latency"
+  },
+  "faithfulness": null,
+  "token_cost": null,
+  "note": "현재는 외부 LLM을 연결하지 않은 RAG 기본 구현이므로 faithfulness와 token cost는 실측 대상이 아닙니다. 실제 LLM 연결 시 동일 평가셋으로 추가 측정합니다."
 }
